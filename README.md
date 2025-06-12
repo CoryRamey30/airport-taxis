@@ -30,13 +30,14 @@ Engineered time-based features (e.g., hour of day, day of week).
 
 Ensured all features were in the correct format before model training.
 
-🤖 Model Training & Evaluation
-Model	Train RMSE	Test RMSE	Notes
-Linear Regression	Baseline	>48	For comparison
-AutoRegression	~55	~55	Did not meet target
-Dummy Regressor	—	49	Baseline model
-LightGBM	30	12	Best performer
-Random Forest	29	16	Strong, but slightly less accurate than LightGBM
+| Model             | Train RMSE | Test RMSE | Notes                                            |
+| ----------------- | ---------- | --------- | ------------------------------------------------ |
+| Linear Regression | Baseline   | >48       | For comparison                                   |
+| AutoRegression    | \~55       | \~55      | Did not meet target                              |
+| Dummy Regressor   | —          | 49        | Baseline model                                   |
+| **LightGBM**      | 30         | **12**    | Best performer                                   |
+| Random Forest     | **29**     | 16        | Strong, but slightly less accurate than LightGBM |
+
 
 ✅ Both LightGBM and Random Forest models beat the 48 RMSE threshold, with LightGBM being the most consistent and accurate on unseen test data.
 
